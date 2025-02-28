@@ -38,3 +38,30 @@ Bu projede kullanılan makine öğrenmesi modelleri arasında **MLP** ve **SVM**
   <summary><b>Voting Classifier (Soft) Confusion Matrix</b></summary>
   <img src="https://github.com/user-attachments/assets/6faa04c2-d4db-46ff-8939-e080db12cd10">
 </details>
+
+# California Housing Prices
+To download the dataset, you need to set up the Kaggle API using the kaggle.json API key.
+### Steps to Set Up Kaggle API
+
+1. **Sign in to Kaggle**:
+   - Go to [Kaggle](https://www.kaggle.com) and log in to your account.
+
+2. **Create a New Kaggle API Token**:
+   - Visit the [Kaggle API page](https://www.kaggle.com/docs/api).
+   - Click on the "Create New API Token" button.
+   - This will download the `kaggle.json` file.
+
+3. **Place the `kaggle.json` File in the Appropriate Directory**:
+   - **Windows**: Move the `kaggle.json` file to the following path:
+     ```
+     C:\Users\YourUser\.kaggle\kaggle.json
+     ```
+   - **Mac/Linux**: Move the `kaggle.json` file to the following path:
+     ```
+     ~/.kaggle/kaggle.json
+     ```
+
+4. **Install the Kaggle Package**:
+   Run the following command to install the Kaggle API Python package:
+   ```bash
+   pip install kaggle
