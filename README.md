@@ -44,7 +44,7 @@ Bu projede kullanılan makine öğrenmesi modelleri arasında **MLP** ve **SVM**
 #### 📌 Proje Açıklaması
 To download the dataset, you need to set up the Kaggle API using the kaggle.json API key.
 <details>
-    <summary><h3>Steps to Set Up Kaggle API</h3></summary>
+    <summary><h4>Steps to Set Up Kaggle API</h4></summary>
 
 1. **Sign in to Kaggle**:
    - Go to [Kaggle](https://www.kaggle.com) and log in to your account.
