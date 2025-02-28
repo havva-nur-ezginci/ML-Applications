@@ -82,7 +82,7 @@ Bu projede, konut fiyatlarını tahmin etmek amacıyla çeşitli regresyon model
 ##### Model Seçimi ve Hiperparametre Ayarlaması
 
 - **Hiperparametre Ayarlaması**: GridSearchCV kullanılarak modellerin hiperparametreleri optimize edilmiştir.
-- **En İyi Model**: En iyi performans **DecisionTreeRegressor (DTR)**, yani **CART** modeli ile elde edilmiştir. Bu modelin performans metrikleri:
+- **En İyi Model**: En iyi performans **DecisionTreeRegressor (DTR)** modeli ile elde edilmiştir. Bu modelin performans metrikleri:
   - **MSE (Ortalama Kare Hatası)**: 3,5
   - **R² Skoru**: 0.7308
 - **Özellik Önem Düzeyleri**: Final modeldeki özelliklerin önem düzeyleri incelenmiştir.
