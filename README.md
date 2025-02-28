@@ -1,15 +1,15 @@
-# Water Quality
+## Water Quality
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
-### 📌 Proje Açıklaması
+#### 📌 Proje Açıklaması
 Bu projede, model performansını artırmak amacıyla **RandomizedSearchCV** kullanılarak **Hyperparameter Tuning** yapılmıştır. Kullanılan makine öğrenmesi modelleri arasında **CatBoost** en yüksek başarıyı elde etmiştir. Test veri seti üzerinde yapılan değerlendirmelere göre, **CatBoost** modelinin accuracy_score **%80** olarak ölçülmüştür. Ayrıca, **CatBoost** modelinin **değişken (feature) önem düzeyleri** incelenmiş ve hangi değişkenlerin model üzerinde daha fazla etkisi olduğu belirlenmiştir.
 
 **Confusion Matrix**: for Test Data
 
 ![Confusion Matrix](https://github.com/user-attachments/assets/92428188-a969-4920-b69b-aa2725cc07f4)
 
-# Heart Attack
+## Heart Attack
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/sonialikhan/heart-attack-analysis-and-prediction-dataset)
-### 📌 Proje Açıklaması
+#### 📌 Proje Açıklaması
 Bu projede, veri setindeki **aykırı değerlerin (outliers) tespiti** için **Z-skoru** ve **Winsorizing** yöntemleri kullanılmıştır. Ayrıca, **kategorik özellikler (categorical features)** için uygun **Encoding** işlemleri gerçekleştirilmiştir. Model optimizasyonu aşamasında ise **GridSearchCV** kullanılarak **Hyperparameter Tuning** yapılmıştır.
 Bu projede kullanılan makine öğrenmesi modelleri arasında **LogisticRegression** en yüksek başarıyı elde etmiştir. Test veri seti üzerinde yapılan değerlendirmelere göre, **LogisticRegression** modelinin accuracy_score **%88** olarak ölçülmüştür.
 
@@ -17,8 +17,8 @@ Bu projede kullanılan makine öğrenmesi modelleri arasında **LogisticRegressi
 |------------------|-----------|
 | ![Confusion Matrix](https://github.com/user-attachments/assets/ef96fbd7-da96-4a9f-9f19-6681d97cede0) | ![ROC](https://github.com/user-attachments/assets/5f8a5c4d-b083-4fdb-8ba0-235093186701) |
 
-# MNIST
-### 📌 Proje Açıklaması
+## MNIST
+#### 📌 Proje Açıklaması
 Bu projede **Principal Component Analysis (PCA)** kullanılarak **boyut indirgeme** işlemi gerçekleştirilmiştir.  
 Model optimizasyonu için **Hyperparameter Tuning** yöntemi uygulanmış ve **GridSearchCV** kullanılarak en iyi parametreler belirlenmiştir.  
 
@@ -39,9 +39,11 @@ Bu projede kullanılan makine öğrenmesi modelleri arasında **MLP** ve **SVM**
   <img src="https://github.com/user-attachments/assets/6faa04c2-d4db-46ff-8939-e080db12cd10">
 </details>
 
-# California Housing Prices
+## California Housing Prices
+#### 📌 Proje Açıklaması
 To download the dataset, you need to set up the Kaggle API using the kaggle.json API key.
-### Steps to Set Up Kaggle API
+<details>
+    <summary><h3>Steps to Set Up Kaggle API</h3></summary>
 
 1. **Sign in to Kaggle**:
    - Go to [Kaggle](https://www.kaggle.com) and log in to your account.
@@ -65,3 +67,21 @@ To download the dataset, you need to set up the Kaggle API using the kaggle.json
    Run the following command to install the Kaggle API Python package:
    ```bash
    pip install kaggle
+
+</details>
+
+Bu projede, konut fiyatlarını tahmin etmek amacıyla çeşitli regresyon modelleri kullanılmıştır. Veri seti üzerinde bazı veri işleme teknikleri uygulanmış, model hiperparametre ayarlamaları yapılmış ve en iyi sonuç veren model seçilmiştir.
+
+##### Veri İşleme Adımları
+
+- **Kategorik Verilerin Kodlanması**: Kategorik sütunlar için One-Hot Encoding kullanılmıştır.
+- **Eksik Verilerin Tamamlanması**: Eksik veriler, K-Nearest Neighbors (KNN) algoritması ile tamamlanmıştır.
+- **Korelasyon Analizi**: Değişkenler arasındaki ilişkiler incelenmiş ve hedef değişkenle en güçlü ilişkiyi gösteren özellikler belirlenmiştir.
+
+##### Model Seçimi ve Hiperparametre Ayarlaması
+
+- **Hiperparametre Ayarlaması**: GridSearchCV kullanılarak modellerin hiperparametreleri optimize edilmiştir.
+- **En İyi Model**: En iyi performans **DecisionTreeRegressor (DTR)**, yani **CART** modeli ile elde edilmiştir. Bu modelin performans metrikleri:
+  - **MSE (Ortalama Kare Hatası)**: 3,5
+  - **R² Skoru**: 0.7308
+- **Özellik Önem Düzeyleri**: Final modeldeki özelliklerin önem düzeyleri incelenmiştir.
