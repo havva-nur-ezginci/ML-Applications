@@ -40,6 +40,7 @@ Bu projede kullanılan makine öğrenmesi modelleri arasında **MLP** ve **SVM**
 </details>
 
 ## California Housing Prices
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/camnugent/california-housing-prices/data)
 #### 📌 Proje Açıklaması
 To download the dataset, you need to set up the Kaggle API using the kaggle.json API key.
 <details>
