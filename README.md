@@ -1,3 +1,11 @@
+
+# Table of Contents
+- [Water Quality](#water-quality)
+- [Heart Attack](#heart-attack)
+- [MNIST](#mnist)
+- [California Housing Prices](#california-housing-prices)
+- [Customer Segmentation - Clustering](#customer-segmentation---clustering)
+
 ## Water Quality
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
 #### 📌 Proje Açıklaması
