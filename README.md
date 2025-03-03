@@ -86,3 +86,12 @@ Bu projede, konut fiyatlarını tahmin etmek amacıyla çeşitli regresyon model
   - **MSE (Ortalama Kare Hatası)**: 3,5
   - **R² Skoru**: 0.7308
 - **Özellik Önem Düzeyleri**: Final modeldeki özelliklerin önem düzeyleri incelenmiştir.
+
+
+## Customer Segmentation - Clustering
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python/data)
+#### 📌 Proje Açıklaması
+- Veri Analizi ve Ön İşleme: Kategorik değişkenlerin **encode** edilmesi, **verinin standartlaştırılması**
+- Boyut Azaltma: **PCA ile optimum bileşen sayısının belirlenmesi**
+- Optimum Küme Sayısının Belirlenmesi: **Yellowbrick** 
+- Kümeleme Modelleri: **K-Means ve Hiyerarşik Kümeleme (Dendrogram - Complete yöntemi)**
