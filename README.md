@@ -5,7 +5,7 @@
 - [MNIST](#mnist)
 - [California Housing Prices](#california-housing-prices)
 - [Customer Segmentation - Clustering](#customer-segmentation---clustering)
-- [Random User Login Logs - Clustering (GMM) - Create DataSet](#random-user-login-logs---clustering)
+- [User Login Logs (Random) - Clustering (GMM) - Create DataSet](#random-user-login-logs---clustering)
 
 ## Water Quality
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
