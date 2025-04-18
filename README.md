@@ -115,10 +115,10 @@ Bu projede, random kullanıcı giriş kayıtları verisi oluşturulmuş ve çeş
 - **Veri Analizi ve Görselleştirme**: Özelliklerin dağılımları ve korelasyonlar incelenmiştir. Verinin daha iyi anlaşılması için **t-SNE tekniği ile görselleştirme** yapılmıştır.
 - **Kümeleme ve Modelleme**: **Elbow yöntemi ile optimum küme sayısı** belirlenmiştir. Daha esnek bir model olan **Gaussian Mixture Model (GMM)** kullanılarak kümeleme gerçekleştirilmiştir. **Dendrogram** yöntemiyle kümeleme, ward yöntemi kullanılarak gerçekleştirilmiştir.
 
-## 🚖 Taxi-v3 Reinforcement Learning
+## Taxi-v3 Reinforcement Learning
 ![Taxi](https://www.gymlibrary.dev/_images/taxi.gif)
 #### 📌 Proje Açıklaması
-Bu proje, OpenAI Gym ortamındaki **Taxi-v3** problemi üzerinde **Q-learning** algoritması kullanılarak gerçekleştirilmiştir.Ortam hakkında detaylı bilgi için 👉
+Bu proje, OpenAI Gym ortamındaki **Taxi-v3** problemi üzerinde **Q-learning** algoritması kullanılarak gerçekleştirilmiştir.🚖 Ortam hakkında detaylı bilgi için 👉
 https://gymnasium.farama.org/environments/toy_text/taxi/
 
 
