@@ -6,6 +6,7 @@
 - [California Housing Prices](#california-housing-prices)
 - [Customer Segmentation - Clustering](#customer-segmentation---clustering)
 - [User Login Logs (Random) - Clustering (GMM) - Create DataSet](#random-user-login-logs---clustering)
+- [Taxi-v3 Reinforcement Learning (Q-Learning)](🚖-Taxi--v3-Reinforcement-Learning)
 
 ## Water Quality
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
@@ -113,3 +114,11 @@ Bu projede, random kullanıcı giriş kayıtları verisi oluşturulmuş ve çeş
 - **Veri Seti Oluşumu**: Normal dağılıma sahip **rastgele kullanıcı giriş logları** oluşturuldu.
 - **Veri Analizi ve Görselleştirme**: Özelliklerin dağılımları ve korelasyonlar incelenmiştir. Verinin daha iyi anlaşılması için **t-SNE tekniği ile görselleştirme** yapılmıştır.
 - **Kümeleme ve Modelleme**: **Elbow yöntemi ile optimum küme sayısı** belirlenmiştir. Daha esnek bir model olan **Gaussian Mixture Model (GMM)** kullanılarak kümeleme gerçekleştirilmiştir. **Dendrogram** yöntemiyle kümeleme, ward yöntemi kullanılarak gerçekleştirilmiştir.
+
+## 🚖 Taxi-v3 Reinforcement Learning
+![Taxi](https://www.gymlibrary.dev/_images/taxi.gif)
+#### 📌 Proje Açıklaması
+Bu proje, OpenAI Gym ortamındaki **Taxi-v3** problemi üzerinde **Q-learning** algoritması kullanılarak gerçekleştirilmiştir.Ortam hakkında detaylı bilgi için 👉
+https://gymnasium.farama.org/environments/toy_text/taxi/
+
+
