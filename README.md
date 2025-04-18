@@ -6,7 +6,7 @@
 - [California Housing Prices](#california-housing-prices)
 - [Customer Segmentation - Clustering](#customer-segmentation---clustering)
 - [User Login Logs (Random) - Clustering (GMM) - Create DataSet](#random-user-login-logs---clustering)
-- [Taxi-v3 Reinforcement Learning (Q-Learning)](🚖-Taxi--v3-Reinforcement-Learning)
+- [Taxi-v3 Reinforcement Learning (Q-Learning)](#taxi-v3-reinforcement-learning)
 
 ## Water Quality
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
