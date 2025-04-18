@@ -5,6 +5,7 @@
 - [MNIST](#mnist)
 - [California Housing Prices](#california-housing-prices)
 - [Customer Segmentation - Clustering](#customer-segmentation---clustering)
+- [User Login Logs (Random) - Clustering (GMM) - Create DataSet](#random-user-login-logs---clustering)
 
 ## Water Quality
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
@@ -103,3 +104,12 @@ Bu projede, konut fiyatlarını tahmin etmek amacıyla çeşitli regresyon model
 - Boyut Azaltma: **PCA ile optimum bileşen sayısının belirlenmesi**
 - Optimum Küme Sayısının Belirlenmesi: **Yellowbrick** 
 - Kümeleme Modelleri: **K-Means ve Hiyerarşik Kümeleme (Dendrogram - Complete yöntemi)**
+
+
+## Random User Login Logs - Clustering
+#### 📌 Proje Açıklaması
+Bu projede, random kullanıcı giriş kayıtları verisi oluşturulmuş ve çeşitli analizler ile kümeleme yöntemleri uygulanmıştır.
+
+- **Veri Seti Oluşumu**: Normal dağılıma sahip **rastgele kullanıcı giriş logları** oluşturuldu.
+- **Veri Analizi ve Görselleştirme**: Özelliklerin dağılımları ve korelasyonlar incelenmiştir. Verinin daha iyi anlaşılması için **t-SNE tekniği ile görselleştirme** yapılmıştır.
+- **Kümeleme ve Modelleme**: **Elbow yöntemi ile optimum küme sayısı** belirlenmiştir. Daha esnek bir model olan **Gaussian Mixture Model (GMM)** kullanılarak kümeleme gerçekleştirilmiştir. **Dendrogram** yöntemiyle kümeleme, ward yöntemi kullanılarak gerçekleştirilmiştir.
