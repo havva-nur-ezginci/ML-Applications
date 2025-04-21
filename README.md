@@ -1,3 +1,4 @@
+Proje kapsamında farklı veri setleri üzerinde makine öğrenmesi algoritmaları ile çalışılmıştır.
 
 # Table of Contents
 - [Water Quality](#water-quality)
