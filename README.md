@@ -160,8 +160,8 @@ Genelleştirmeyi artırmak için `ImageDataGenerator` ile veri artırımı yapı
 ##### 2- CNN Architecture
 
 - **Model Yapısı:**  
-  - Özellik çıkarımı (Feature Extraction) için birkaç **Conv + ReLU + Pool + Dropout** katmanı  
-  - Sınıflandırma (Classification) için **Flatten + Dense + ReLU + BatchNormalization + Dropout** katmanları  
+  - Feature Extraction : **Conv + ReLU + Pool + Dropout**   
+  - Classification : **Flatten + Dense + ReLU + BatchNormalization + Dropout**   
   - Çıkış katmanında **Softmax** aktivasyonu kullanıldı  
 
 - **Optimizer & Loss:**  
@@ -175,7 +175,7 @@ Genelleştirmeyi artırmak için `ImageDataGenerator` ile veri artırımı yapı
 
 ##### 3- 📊 Results
 
-- Eğitim ve validation **accuracy** ile **loss** grafikleri :  
+- Eğitim ve validasyon **accuracy** ile **loss** grafikleri :  
 
 <img width="%50" height="%50" alt="image" src="https://github.com/user-attachments/assets/ce2a566d-e450-47e1-9101-a8ef04fe4bba" />
 
@@ -190,5 +190,7 @@ Genelleştirmeyi artırmak için `ImageDataGenerator` ile veri artırımı yapı
 |------------------|-----------|
 | ![Confusion Matrix](https://github.com/user-attachments/assets/fe74f5f8-ef18-4b91-8c92-75f8d4f4e208) | ![Classification Report](https://github.com/user-attachments/assets/39536dfa-cac2-4a04-bd38-7ea553e359b3) |
 
-    
+
+----
+
 
