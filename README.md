@@ -8,6 +8,9 @@ Proje kapsamında farklı veri setleri üzerinde makine öğrenmesi algoritmalar
 - [Customer Segmentation - Clustering](#customer-segmentation---clustering)
 - [User Login Logs (Random) - Clustering (GMM) - Create DataSet](#random-user-login-logs---clustering)
 - [Taxi-v3 Reinforcement Learning (Q-Learning)](#taxi-v3-reinforcement-learning)
+- [👗 FashionMNIST | CNN + RMSprop + ImageDataGenerator](#fashionmnist--cnn--rmsprop--imagedatagenerator)
+
+----
 
 ## Water Quality
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
@@ -18,6 +21,8 @@ Bu projede, model performansını artırmak amacıyla **RandomizedSearchCV** kul
 
 ![Confusion Matrix](https://github.com/user-attachments/assets/92428188-a969-4920-b69b-aa2725cc07f4)
 
+----
+
 ## Heart Attack
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/sonialikhan/heart-attack-analysis-and-prediction-dataset)
 #### 📌 Proje Açıklaması
@@ -27,6 +32,8 @@ Bu projede kullanılan makine öğrenmesi modelleri arasında **LogisticRegressi
 | Confusion Matrix | ROC Curve |
 |------------------|-----------|
 | ![Confusion Matrix](https://github.com/user-attachments/assets/ef96fbd7-da96-4a9f-9f19-6681d97cede0) | ![ROC](https://github.com/user-attachments/assets/5f8a5c4d-b083-4fdb-8ba0-235093186701) |
+
+----
 
 ## MNIST
 #### 📌 Proje Açıklaması
@@ -49,6 +56,9 @@ Bu projede kullanılan makine öğrenmesi modelleri arasında **MLP** ve **SVM**
   <summary><b>Voting Classifier (Soft) Confusion Matrix</b></summary>
   <img src="https://github.com/user-attachments/assets/6faa04c2-d4db-46ff-8939-e080db12cd10">
 </details>
+
+----
+
 
 ## California Housing Prices
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/camnugent/california-housing-prices/data)
@@ -98,6 +108,8 @@ Bu projede, konut fiyatlarını tahmin etmek amacıyla çeşitli regresyon model
   - **R² Skoru**: 0.7308
 - **Özellik Önem Düzeyleri**: Final modeldeki özelliklerin önem düzeyleri incelenmiştir.
 
+----
+
 
 ## Customer Segmentation - Clustering
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python/data)
@@ -107,6 +119,7 @@ Bu projede, konut fiyatlarını tahmin etmek amacıyla çeşitli regresyon model
 - Optimum Küme Sayısının Belirlenmesi: **Yellowbrick** 
 - Kümeleme Modelleri: **K-Means ve Hiyerarşik Kümeleme (Dendrogram - Complete yöntemi)**
 
+----
 
 ## Random User Login Logs - Clustering
 #### 📌 Proje Açıklaması
@@ -116,10 +129,66 @@ Bu projede, random kullanıcı giriş kayıtları verisi oluşturulmuş ve çeş
 - **Veri Analizi ve Görselleştirme**: Özelliklerin dağılımları ve korelasyonlar incelenmiştir. Verinin daha iyi anlaşılması için **t-SNE tekniği ile görselleştirme** yapılmıştır.
 - **Kümeleme ve Modelleme**: **Elbow yöntemi ile optimum küme sayısı** belirlenmiştir. Daha esnek bir model olan **Gaussian Mixture Model (GMM)** kullanılarak kümeleme gerçekleştirilmiştir. **Dendrogram** yöntemiyle kümeleme, ward yöntemi kullanılarak gerçekleştirilmiştir.
 
+----
+
 ## Taxi-v3 Reinforcement Learning
 ![Taxi](https://www.gymlibrary.dev/_images/taxi.gif)
 #### 📌 Proje Açıklaması
 Bu proje, OpenAI Gym ortamındaki **Taxi-v3** problemi üzerinde **Q-learning** algoritması kullanılarak gerçekleştirilmiştir.🚖 Ortam hakkında detaylı bilgi için 👉
 https://gymnasium.farama.org/environments/toy_text/taxi/
 
+----
+
+
+## 👗FashionMNIST | CNN + RMSprop + ImageDataGenerator
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/zalando-research/fashionmnist/data)
+#### 📌 Proje Açıklaması
+
+Bu proje, Fashion-MNIST veri setindeki görselleri 10 farklı giyim kategorisine sınıflandırmak için bir Convolutional Neural Network (CNN) uygulanmıştır.  
+Genelleştirmeyi artırmak için `ImageDataGenerator` ile veri artırımı yapılmıştır. Model, `RMSprop` optimizer ile eğitilmiş, EarlyStopping ve ModelCheckpoint ile izlenmiş ve test setinde %89 doğruluk elde etmiştir.
+
+##### 1- Data Preparation
+
+- **Veri Seti:** Fashion-MNIST (Kaggle)  
+- **Dosya Formatı:** UBYTE dosyaları, `idx2numpy` ile okundu  
+- **Ortam & İndirme:** Google Colab + Kaggle API (`kaggle.json`)  
+- **Ön İşleme & Görselleştirme:** Görseller normalize edildi ve örnekler gösterildi  
+- **Data Augmentation:** Sadece training set üzerinde, %20 validation ayırarak `ImageDataGenerator` kullanıldı  
+- **Generator:** `flow` ile **train_generator** ve **val_generator** oluşturuldu  
+
+
+##### 2- CNN Architecture
+
+- **Model Yapısı:**  
+  - Özellik çıkarımı (Feature Extraction) için birkaç **Conv + ReLU + Pool + Dropout** katmanı  
+  - Sınıflandırma (Classification) için **Flatten + Dense + ReLU + BatchNormalization + Dropout** katmanları  
+  - Çıkış katmanında **Softmax** aktivasyonu kullanıldı  
+
+- **Optimizer & Loss:**  
+  - Optimizer: `RMSprop` (learning_rate=0.0001, decay=1e-6)  
+  - Loss: `sparse_categorical_crossentropy`  
+  - Metrics: `accuracy`  
+
+- **Callbacks:** `EarlyStopping` ve `ModelCheckpoint`  
+- **Epochs:** 60  
+
+
+##### 3- 📊 Results
+
+- Eğitim ve validation **accuracy** ile **loss** grafikleri :  
+
+<img width="%50" height="%50" alt="image" src="https://github.com/user-attachments/assets/ce2a566d-e450-47e1-9101-a8ef04fe4bba" />
+
+- 🧪 Evaluation
+  - Best saved model was loaded  
+  - Evaluated on the test set:  
+    - **Accuracy:** 0.8937  
+    - **Loss:** 0.3100
+    - **Classification Report** and **Confusion Matrix** were calculated and visualized:
+  
+| Confusion Matrix |Classification Report |
+|------------------|-----------|
+| ![Confusion Matrix](https://github.com/user-attachments/assets/fe74f5f8-ef18-4b91-8c92-75f8d4f4e208) | ![Classification Report](https://github.com/user-attachments/assets/39536dfa-cac2-4a04-bd38-7ea553e359b3) |
+
+    
 
