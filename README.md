@@ -197,16 +197,9 @@ Genelleştirmeyi artırmak için `ImageDataGenerator` ile veri artırımı yapı
 ## 🩺 Liver Cirrhosis Outcome Classification
 [![Kaggle](https://img.shields.io/badge/Kaggle-Competition-blue?logo=kaggle)](https://www.kaggle.com/competitions/ai-lab-turkiye-datathon-2025)
 
-**Kısa Açıklama**  
-Bu proje, klinik, demografik ve laboratuvar özelliklerini kullanarak karaciğer sirozu hastalarının sonuçlarını (C / CL / D) tahmin etmeye yönelik bir multi class classification  çalışmasıdır. Veri seti, orijinal Cirrhosis Patient Survival Prediction verisinden türetilmiş ve AI ile üretilmiş örneklemeleri içerir.
-
----
-
 #### 📌 Proje Açıklaması
 
-Bu çalışmada amaç, verilen klinik özellikler üzerinden her hasta için üç sınıftan (C, CL, D) hangisine ait olduğuna dair **olasılık tahminleri** üretmektir. Modelin çıktısı üç olasılık sütunu olacak: `Status_C`, `Status_CL`, `Status_D`.
-
-----
+Bu proje, klinik, demografik ve laboratuvar özelliklerini kullanarak karaciğer sirozu hastalarının sonuçlarını (C / CL / D) tahmin etmeye yönelik bir **multi-class sınıflandırma** çalışmasıdır. Amaç, her hasta için üç sınıftan hangisine ait olduğuna dair **olasılık tahminleri** üretmektir; modelin çıktısı `Status_C`, `Status_CL` ve `Status_D` sütunlarını içerecektir. Veri seti, orijinal Cirrhosis Patient Survival Prediction verisinden türetilmiş ve AI ile üretilmiş örneklemeleri içermektedir.
 
 #### 📌 Neden Önemli?
 
@@ -216,8 +209,6 @@ Siroz hastalarının yaşam süresi tahmininin doğru yapılması, sağlık prof
 - Hastaya uygun tedavi planının stratejik olarak belirlenmesi
 - Sağlık kaynaklarının daha verimli yönetilmesi
 - Hastaların genel bakım kalitesinin artırılması
-
----
 
 #### Veri Seti
 - Kaynak: AI tarafından oluşturulmuş Liver Cirrhosis dataset 
@@ -233,21 +224,15 @@ Yarışma organizatörleri, verilen train ve test dosyalarının orijinal “Cir
 
 Bu projede orijinal Cirrhosis veri setini ayrıca yükleyip sadece keşifsel analiz (EDA) ve ek testler için kullandım. 
 
----
-
 #### Target Variable:
 - `Status` — Üç sınıf:
   - **C**: Censored (hasta N_Days'de hayatta)  
   - **CL**: Hayatta, karaciğer nakli nedeniyle  
   - **D**: N_Days'de vefat etmiş
 
----
-
 #### Evaluation
 - Metric: **Multi-Class Log Loss** (kaggle-style multiclass log loss).  
 - Gönderim formatı: `id,Status_C,Status_CL,Status_D` (olasılıklar).  
-
----
 
 ####  🛠️ Data Preprocessing
 
@@ -292,8 +277,6 @@ Hedef değişkenin dengesiz yapısı nedeniyle **SMOTE** uygulanarak azınlık s
   <img src="https://github.com/user-attachments/assets/aa07e83e-3a33-402b-b517-e82b8e1bca71" alt="smote-sonrasi" width="45%" />
 </p>
 
-
----
 
 #### Modeling
 
